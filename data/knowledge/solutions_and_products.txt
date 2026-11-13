@@ -1,0 +1,47 @@
+Oneberry Solutions Menu
+- Anomaly Detection AI
+- Virtual Guard
+- Security Services
+- Mobile Surveillance
+- Video Analytics
+- Cyber Defence
+- Clean Energy
+- Security Robots
+- Productivity Software
+- Defence
+- Bluetooth Technology
+
+Oneberry offers a portfolio of technology-driven solutions that align with the categories presented on the corporate website. Each item combines automation with security expertise to boost efficiency and resilience for public- and private-sector clients.
+
+Anomaly Detection AI
+- Computer-vision analytics (including ARVAS) that spot unusual behaviours across CCTV networks so security teams can respond proactively instead of manually reviewing footage.
+
+Virtual Guard
+- Remote guarding service delivered from the Oneberry Command Centre, pairing CCTV, access control, concierge interactions, and outcome-based service levels to reduce manpower needs.
+
+Security Services
+- Integrated manpower and managed services that complement technology deployments, providing site operations, incident response, and compliance coverage.
+
+Mobile Surveillance
+- Rapid-deployment camera systems and trailers that extend monitoring coverage to temporary or hard-to-wire locations with secure connectivity.
+
+Video Analytics
+- AI modules that enhance live and recorded video feeds with event detection, search, and automation features tailored to customer workflows.
+
+Cyber Defence
+- Solutions such as Invisiron that harden networks with stealth intrusion prevention, autonomous threat blocking, and compliance reporting for enterprises and SMEs.
+
+Clean Energy
+- Power systems (e.g., EFOY smart fuel cells and hybrid energy packs) that keep remote surveillance and communications equipment online with minimal maintenance.
+
+Security Robots
+- Customisable patrol and concierge robots that assist human officers with routine tasks, visitor engagement, and data collection; adoption is supported by local grant schemes.
+
+Productivity Software
+- Command-centre and operations software that unifies device telemetry, workforce management, and reporting to raise productivity and service quality.
+
+Defence
+- Advanced sensors, communications, and ruggedised platforms that support homeland and defence applications requiring resilience and rapid response.
+
+Bluetooth Technology
+- Secure Bluetooth Low Energy (BLE) solutions for indoor positioning, access control, and asset tracking that integrate with other Oneberry platforms.

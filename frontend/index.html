@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oneberry Chatbot Console</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Oneberry Chatbot Console</h1>
+      <p class="subtitle">
+        Ask questions about Oneberry and review model responses with their cited sources.
+      </p>
+    </header>
+
+    <main>
+      <section class="settings">
+        <label for="backendUrl">Backend URL</label>
+        <input
+          type="text"
+          id="backendUrl"
+          value="http://127.0.0.1:8000"
+          aria-label="Backend URL"
+        />
+        <button id="pingBtn" type="button">Check Connection</button>
+        <span id="pingStatus" role="status" aria-live="polite"></span>
+      </section>
+
+      <section class="chat-panel">
+        <div id="conversation" class="conversation" aria-live="polite"></div>
+
+        <form id="chatForm" autocomplete="off">
+          <textarea
+            id="messageInput"
+            rows="3"
+            placeholder="Type your question about Oneberry here..."
+            required
+          ></textarea>
+          <div class="form-actions">
+            <button id="sendBtn" type="submit">Send</button>
+            <button id="clearBtn" type="button">Clear</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <small>
+        Backend responses cite the knowledge snippets pulled from the local repository.
+        The conversation history is kept client-side only.
+      </small>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

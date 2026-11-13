@@ -1,0 +1,23 @@
+# Credentials and local environment files
+.env
+.env.*
+**/.env
+**/.env.*
+!.env.example
+!**/.env.example
+*.pem
+*.key
+
+# Dependencies and generated files
+.venv/
+venv/
+node_modules/
+.next/
+out/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.log
+*.tsbuildinfo
+.DS_Store
+Thumbs.db

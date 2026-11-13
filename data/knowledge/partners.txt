@@ -1,0 +1,23 @@
+Oneberry Partner: MOBOTIX
+Overview: MOBOTIX is a German pioneer in decentralized IP video systems renowned for robust, weatherproof smart cameras with built-in analytics. Their solutions cover thermal imaging, perimeter protection, manufacturing quality control, and remote monitoring where high reliability is critical.
+Partnership Fit: Oneberry integrates MOBOTIX edge-analytics cameras into AI-powered surveillance deployments to capture resilient video streams in harsh outdoor sites, remote infrastructure, and energy facilities. The cameras’ on-device processing pairs well with Oneberry’s automation stack to reduce bandwidth and enable real-time anomaly detection.
+
+Oneberry Partner: NetworkOptix (Nx Witness)
+Overview: NetworkOptix develops the Nx Witness VMS and Nx Meta video platform, delivering lightweight, distributed video management for IP cameras, IoT sensors, and cloud connectivity. The software focuses on ease of use, rapid search, and cross-platform access.
+Partnership Fit: Oneberry leverages Nx Witness to unify live monitoring, playback, and event search across hybrid camera fleets. The integration helps operations teams manage MOBOTIX, Axis, and other IP cameras within Oneberry’s command centre, while enabling rapid deployment of kiosk and remote guarding solutions.
+
+Oneberry Partner: SFC Energy
+Overview: SFC Energy is a global provider of hydrogen and methanol fuel cell solutions that deliver silent, efficient off-grid power. Their EFOY and EFOY Pro lines support industrial, security, and defense applications requiring long-duration autonomy.
+Partnership Fit: Oneberry combines SFC Energy fuel cells with mobile surveillance units, remote sensors, and kiosks to ensure continuous power where grid access is limited. The clean-energy systems align with Oneberry’s sustainability goals and keep security devices online with minimal maintenance.
+
+Oneberry Partner: Axis Communications
+Overview: Axis Communications, headquartered in Sweden, created the first network camera and today supplies a broad portfolio of IP cameras, video analytics, network audio, and access control devices. Axis solutions emphasize scalability, cybersecurity, and open integrations.
+Partnership Fit: Oneberry deploys Axis cameras, analytics, and audio products in smart surveillance projects, blending them with Oneberry’s AI, robotics, and VMS stack. Axis hardware provides high-quality imaging and open APIs that work well with Oneberry’s custom automation workflows.
+
+Oneberry Partner: Hikvision
+Overview: Hikvision is a global producer of video surveillance equipment, including AI-enabled cameras, NVRs, video walls, and security platforms for verticals such as transportation, retail, and critical infrastructure.
+Partnership Fit: Oneberry incorporates Hikvision devices in outcome-based guarding, smart city, and integrated security projects that demand deep product variety and AI features (e.g., people counting, vehicle recognition). Hikvision hardware complements Oneberry’s anomaly detection and command centre services.
+
+Oneberry Partner: Invisiron
+Overview: Invisiron builds plug-and-play cyber defence appliances featuring the C3XT architecture—combining stealth mode, autonomous threat prevention, and high-speed inline packet processing. The solution is pre-approved for SMEs Go Digital grants in Singapore.
+Partnership Fit: Oneberry integrates Invisiron systems to harden the networks that connect surveillance devices, kiosks, and command centres. Invisiron’s zero-touch deployment supports Oneberry’s managed services by providing real-time threat blocking, compliance logging, and secure remote access.

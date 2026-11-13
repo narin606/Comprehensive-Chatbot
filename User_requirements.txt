@@ -1,0 +1,2 @@
+Make it into a package /container so i can just copy and run it on any kiosk that i want ( running on ubuntu officially but i want to use another windows laptop to test it. 
+i want to add a function similar to the redbox layout where i can select the media options to see the media. (reference: oneberry/redbox folder)

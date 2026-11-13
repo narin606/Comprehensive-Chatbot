@@ -1,0 +1,47 @@
+name: Complete initial media upload
+on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/import-media.yml]
+permissions:
+  contents: write
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Reassemble and verify original media
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python3 - <<'PY'
+          import base64, hashlib, json, os, pathlib, urllib.request
+          manifest = json.loads("[{\"path\":\"data/media/Arvas-future-of-smart-surveilance.mp4\",\"size\":53833576,\"sha\":\"0d7d0e2f51524b9ddbdee619e0db4da381af2aed\",\"chunks\":[\"2e6f4facd149085d0d9ab1039701baefb1e64135\",\"362d981dd6c772864011a7c44cceeaee805a68fb\",\"7cdc0f32707f1cbd42d6dbb31093ead63cf9fb3f\",\"dbb93ec6671094ebea83ca1fccdba0e7047a64c8\",\"8e676e6facc0b9560a33355b1f9c1f1430bfb5fd\",\"454f7f3f96bf3b9a0f65cef5fb0ddbf878f54aa1\",\"a6e4fde227c0345ce8d9b8a81ad2021f3fb3c4bd\",\"45e6be1892dc0cb4c3c3d5de202f18de8bf0580c\",\"8e3bebcc4d70e5eeba374b9089dcb09a973f756b\",\"e74c3e1034bfb44d88c3d79cbff6f63fa68f4c55\",\"6d8638d078b1e221a9f075082f01ca5ff8b95f8c\",\"81d7ad9f5b362e314dfa372d7578823d401fa291\",\"671d9ce99854351d2398427bfe8b76ae6d741d37\"]},{\"path\":\"data/media/Oneberry-launch.mp4\",\"size\":35490135,\"sha\":\"1698cd48340e11ea95382939463e13f4f499f3ee\",\"chunks\":[\"825de59517692ccdd75be5afde92d27ef32a4e2c\",\"0dea4f948c7f251444706bf19c08a94ec3c9aa63\",\"4ab30f5bbe98f63104706b06085f29b517b7e0f5\",\"517d55d0fb5332ace998cfad248f645471436459\",\"11d2d07e78d516ca89549c6c8a2b4a691a481d4a\",\"1c590849ef0040a5eacbf9f58b0c1189f77b024b\",\"c23ca003d58be77a060437d72ae6181830d62d20\",\"ffe1ae83e559d76d420b3c8efed1c2be900a739b\",\"257f9dbe46f607b01ef7a819d8e6ec52e5bb9876\"]}]")
+          for item in manifest:
+              target = pathlib.Path(item["path"])
+              target.parent.mkdir(parents=True, exist_ok=True)
+              with target.open("wb") as out:
+                  for sha in item["chunks"]:
+                      request = urllib.request.Request(
+                          "https://api.github.com/repos/narin606/Comprehensive-Chatbot/git/blobs/" + sha,
+                          headers={"Authorization": "Bearer " + os.environ["GH_TOKEN"], "Accept": "application/vnd.github+json"})
+                      with urllib.request.urlopen(request, timeout=90) as response:
+                          blob = json.load(response)
+                      data = base64.b64decode(blob["content"])
+                      actual = hashlib.sha1(("blob " + str(len(data)) + "\0").encode() + data).hexdigest()
+                      assert actual == sha, "Segment hash mismatch"
+                      out.write(data)
+              data = target.read_bytes()
+              assert len(data) == item["size"], "Video size mismatch"
+              actual = hashlib.sha1(("blob " + str(len(data)) + "\0").encode() + data).hexdigest()
+              assert actual == item["sha"], "Video hash mismatch"
+              print("Verified:", target)
+          PY
+      - name: Commit verified media
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- data/media/Arvas-future-of-smart-surveilance.mp4 data/media/Oneberry-launch.mp4
+          git commit -m "Add verified original project videos"
+          git push origin HEAD:main

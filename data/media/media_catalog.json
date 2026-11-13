@@ -1,0 +1,29 @@
+[
+  {
+    "id": "arvas-future-smart",
+    "title": "ARVAS: Future of Smart Surveillance",
+    "description": "Discover how Oneberry's ARVAS platform delivers anomaly detection for smart surveillance operations.",
+    "media_type": "video",
+    "source": "Arvas-future-of-smart-surveilance.mp4",
+    "thumbnail": null,
+    "tags": ["ARVAS", "Anomaly Detection", "AI Surveillance"]
+  },
+  {
+    "id": "kenobi-wireless-docking",
+    "title": "KenOBI Wireless Docking",
+    "description": "See KenOBI perform automated wireless docking to recharge and redeploy without manual intervention.",
+    "media_type": "video",
+    "source": "KenOBI-wireless-docking.mp4",
+    "thumbnail": null,
+    "tags": ["KenOBI", "Robotics", "Automation"]
+  },
+  {
+    "id": "oneberry-launch",
+    "title": "Oneberry Launch Highlights",
+    "description": "Highlights from a Oneberry product launch, showcasing integrated security and automation solutions.",
+    "media_type": "video",
+    "source": "Oneberry-launch.mp4",
+    "thumbnail": null,
+    "tags": ["Launch", "Oneberry"]
+  }
+]
